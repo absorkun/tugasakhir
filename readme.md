@@ -25,7 +25,7 @@ Midtrans API diperlukan.
 
 atau bisa sekaligus
 
-`git clone https://github.com/absorkun/tugasakhir; cd tugasakhir; cp .env.example .env; notepad.exe` ==> save ==> exit
+`git clone https://github.com/absorkun/tugasakhir; cd tugasakhir; cp .env.example .env; notepad .env` ==> save ==> exit
 
 `composer install; npm install; php artisan migrate:fresh; php artisan db:seed; composer run dev`
 
