@@ -6,7 +6,7 @@ Langkahnya:
 
 `cp .env.example .env`
 
-Abis itu copu midtrans API ke file .env pake notepad:
+Abis itu copy midtrans API ke file .env pake notepad:
 
 `notepad .env` ==> Setelah itu save ==> exit notepad
 
