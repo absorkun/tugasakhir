@@ -23,12 +23,17 @@ class PaymentController extends Controller
                 'order_id' => $request->order_id,
                 'gross_amount' => $request->amount,
             ],
-            // 'customer_details' => [
-            //     'first_name' => $request->first_name,
-            //     'last_name' => $request->last_name,
-            //     'email' => $request->email,
-            //     'phone' => $request->phone,
-            // ],
+            'customer_details' => [
+                'first_name' => $request->first_name,
+                // 'last_name' => $request->last_name,
+                // 'email' => $request->email,
+                // 'phone' => $request->phone,
+            ],
+            'callbacks' => [
+                'finish' => route('tagihan'),
+                'unfinish' => route('tagihan'),
+                'error' => route('tagihan'),
+            ],
         ];
 
         $snapToken = Snap::getSnapToken($params);

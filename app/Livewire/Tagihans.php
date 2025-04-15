@@ -13,7 +13,8 @@ class Tagihans extends Component
 
     public function process($kode, $jumlah_bayar)
     {
-        return redirect()->route('payment', ["order_id" => $kode, "amount" => $jumlah_bayar]);
+        $first_name = Auth::user()->name;
+        return redirect()->route('payment', ["order_id" => $kode, "amount" => $jumlah_bayar, "first_name" => $first_name]);
     }
 
     public function render()
